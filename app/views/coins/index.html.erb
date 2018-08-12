@@ -1,0 +1,20 @@
+<table class="table">
+<tr>
+  <th>Coin ID</th>
+  <th>name</th>
+  <th>symbol</th>
+  <th>current_rank</th>
+  <th>current_cny</th>
+  <th></th>
+</tr>
+<% @coins.each do |coin| %>
+  <tr>
+    <td><%= coin.coin_id %></td>
+    <td><%= coin.name %></td>
+    <td><%= coin.symbol %></td>
+    <td><%= coin.current_rank %></td>
+    <td><%= coin.current_cny %></td>
+    <td></td>
+  </tr>
+<% end %>
+</table>

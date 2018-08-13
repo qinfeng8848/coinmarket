@@ -10,16 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_12_071923) do
+ActiveRecord::Schema.define(version: 2018_08_13_063010) do
 
   create_table "coins", force: :cascade do |t|
     t.string "coin_id"
     t.string "name"
     t.string "symbol"
-    t.string "current_rank"
-    t.string "current_cny"
+    t.string "rank"
+    t.string "price_cny"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "percent_change_24h"
   end
 
 end
